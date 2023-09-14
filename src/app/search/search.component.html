@@ -1,0 +1,9 @@
+<div>
+  <input
+    type="text"
+    placeholder="Search For Your Food"
+    [(ngModel)]="searchTerm"
+    (change)="search()"
+  />
+  <button class="search-button" (click)="search()">Search</button>
+</div>

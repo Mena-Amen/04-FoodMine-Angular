@@ -1,0 +1,8 @@
+<div class="container">
+  <img
+    *ngFor="let curret of [1, 2, 3, 4, 5]"
+    [src]="getStarImage(curret)"
+    [ngStyle]="styles"
+    alt=""
+  />
+</div>

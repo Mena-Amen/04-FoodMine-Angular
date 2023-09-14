@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="content">
+    <h3>Order Summary</h3>
+    <order-item-list [order]="order"></order-item-list>
+  </div>
+  <div class="map">
+    <h3>Shipping Address</h3>
+    <map [order]="order" [readonly]="true"></map>
+  </div>
+  <div class="buttons-containers">
+    <div class="buttons">
+      <paypal-button [order]="order"></paypal-button>
+    </div>
+  </div>
+</div>

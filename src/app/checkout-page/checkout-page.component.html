@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="content">
+    <h3>Order Details</h3>
+    <order-item-list [order]="order"></order-item-list>
+  </div>
+  <div class="map">
+    <h3>Choose Your Address On Map</h3>
+    <map [order]="order"></map>
+  </div>
+  <div class="buttons-containers">
+    <div class="buttons">
+      <button (click)="createOrder()" routerLink="/payment">
+        Go To Payment
+      </button>
+    </div>
+  </div>
+</div>
